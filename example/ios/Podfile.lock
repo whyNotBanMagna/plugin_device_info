@@ -1,0 +1,44 @@
+PODS:
+  - FingerprintJS (1.5.0):
+    - FingerprintJS/Core (= 1.5.0)
+  - FingerprintJS/Core (1.5.0):
+    - FingerprintJS/SystemControl
+  - FingerprintJS/SystemControl (1.5.0)
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - plugin_device_info (0.0.1):
+    - FingerprintJS (= 1.5.0)
+    - Flutter
+
+DEPENDENCIES:
+  - FingerprintJS (from `https://github.com/fingerprintjs/fingerprintjs-ios.git`, tag `1.5.0`)
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - plugin_device_info (from `.symlinks/plugins/plugin_device_info/ios`)
+
+EXTERNAL SOURCES:
+  FingerprintJS:
+    :git: https://github.com/fingerprintjs/fingerprintjs-ios.git
+    :tag: 1.5.0
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  plugin_device_info:
+    :path: ".symlinks/plugins/plugin_device_info/ios"
+
+CHECKOUT OPTIONS:
+  FingerprintJS:
+    :git: https://github.com/fingerprintjs/fingerprintjs-ios.git
+    :tag: 1.5.0
+
+SPEC CHECKSUMS:
+  FingerprintJS: 96410117a394cca04d0f1e2374944c8697f2cceb
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  integration_test: 13825b8a9334a850581300559b8839134b124670
+  plugin_device_info: acec42387b6d3f95ea97dc6e3203908ef0775d5b
+
+PODFILE CHECKSUM: 56ccacf7bed2d285c3d8f25a4b2d546c71ae1315
+
+COCOAPODS: 1.15.2
