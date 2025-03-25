@@ -10,6 +10,11 @@ class MockPluginDeviceInfoPlatform
 
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+  
+  @override
+  Future<String?> getDeviceInfo() {
+    return Future.value('{"model":"iPhone","version":"14.4"}');
+  }
 }
 
 void main() {

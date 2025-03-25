@@ -1,7 +1,8 @@
 name: plugin_device_info
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/whyNotBanMagna/plugin_device_info.git
+repository: https://github.com/whyNotBanMagna/plugin_device_info.git
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
