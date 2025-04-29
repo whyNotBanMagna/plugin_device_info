@@ -56,9 +56,7 @@ class PluginDeviceInfoPlugin: FlutterPlugin, MethodCallHandler {
           jsonObject.put("gsfId",gsfId)
           jsonObject.put("mediaDrmId",mediaDrmId)
           jsonObject.put("fingerPrint",fingerprint)
-//          jsonObject.put("appVersion",AppConstant.getVersionCode())
-//          jsonObject.put("imei",AppConstant.getDeviceIMEI())
-
+          jsonObject.put("isSandbox", Sandbox.isInSandboxOrEmulator(context))
           fingerPrinter.getFingerprintingSignalsProvider()?.getSignalsMatching(Fingerprinter.Version.V_6,StabilityLevel.STABLE)?.forEach {
             when (it){
               is ManufacturerNameSignal -> {
